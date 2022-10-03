@@ -195,28 +195,38 @@ footer{
 
 /*Mobile*/
 @media (max-width: 600px) {
+    body{
+        padding: 0;
+        text-align: center;
+    }
+    .nav{
+        visibility: hidden;
+    }
     /*Main*/
     .main{
         display: block;
         text-align: center;
     }
+    .main--image img{
+        width: 80vw;
+    }
     .main--text{
         height: 300px;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        width: 100%;
     }
     .main--text h1{
         font-size: 40px;
-        width: 100%;
+        width: 80%;
     }
     .main--text p{
         width: 100%;
     }
     .main--text__btn{
-        width: 100%;
+        width: 80%;
         height: 50px;
         font-size: 16px;
     }
@@ -224,11 +234,10 @@ footer{
         margin: 0 25px;
     }
 
-    /*About*/
-    .about p{
-        width: 100%;
+    /*Habilities*/
+    .habilities--card{
+        width: 200px;
     }
-
     /*Experience*/
     .experience--card{
         margin: 40px auto;
